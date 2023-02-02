@@ -1,6 +1,7 @@
 extends Node # instancia a classe Node2D
-
+# Eduardo Henrique dos Santos
 var status = 1
+var one
 var vscore = 0
 var x = 1.5 
 var y = 1.5 
