@@ -1,10 +1,8 @@
 extends Node # instancia a classe Node2D
-# Eduardo Henrique dos Santos
-var status = 1
-var one
-var vscore = 0
-var x = 1.5 
-var y = 1.5 
+var status = 1 # ela inicia o jogo, indicando se o se o jogador ainda está ganhando ou quando ele perde a mesma vai para o valor 0 e indica que você perdeu
+var vscore = 0 #começa em 0 e toda vez que passa por uma coluna conta mais um ponto, ou seja, é uma espécie de contador para saber seu placar
+var x = 1.5 #é variável que indica posição que o boneco vai andar na linha horizontal 
+var y = 1.5 #é variável que indica posição que o boneco vai andar na linha vertical
 
 # executa essa função ao carregar o jogo
 func _ready():
@@ -23,7 +21,7 @@ func _process(delta):
 			$background.position.x = 600
 			
 		# movimenta as colunas para colisão
-		$columns.position.x -= 2*x
+		$columns.position.x -= 9*x
 		if ($columns.position.x) < -550:
 			$columns.position.x = rand_range(0, 350) - 50
 			$columns.position.y = rand_range(0, 400) - 200
