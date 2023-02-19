@@ -98,7 +98,7 @@ margin_left = 719.0
 margin_top = 214.0
 margin_right = 862.0
 margin_bottom = 269.0
-text = "valor"
+text = "resultado"
 
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_Button2_pressed"]

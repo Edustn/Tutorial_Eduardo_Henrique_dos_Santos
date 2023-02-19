@@ -24,18 +24,18 @@ func _on_Button4_pressed():
 
 func listaPreenchida():  # lista prencida
 	var vetor = ["Eduardo","Tommy","Rafa", "Fernando","Ivan", "Luiza", "Ana", "Gustavo"]
-	var nomes = ""
+#	var nomes = ""
 	
-	for i in range(vetor.size()):
-		nomes += vetor[i] + "\n" 
-	return nomes
+#	for i in range(vetor.size()):
+#		nomes += vetor[i] + "\n" 
+	return String(vetor)
 	
 func listaUsuario(): #lsita que o usuario insere os dados
-	var dado = $dado1.text.split(" ", true) # lista em branco que faz a separacao por espaços
-	var list = ""
-	for i in range(dado.size()):
-		list += dado[i] + "\n"
-	return list
+	var dado = $dado1.text.split(" ", true) # lista vazia que faz separacao dos dados inseridos
+#	var list = ""
+#	for i in range(dado.size()):
+#		list += dado[i] + "\n"
+	return String(dado)
 	
 func retornarTextoNaTela(): #funcao para retornar o texto
 	return "Hello, World!"
